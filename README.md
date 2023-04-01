@@ -7,10 +7,10 @@
 O projeto consiste em um sistema de doações, que permite aos usuários se cadastrar, fazer doações e ver o histórico de doações. O projeto FOI desenvolvido em Java e utiliza orientação a objeto.
 
 * Algumas das funcionalidades disponíveis no sistema incluem:
-- ✅ * Cadastrar doadores;
-- ✅ * Fazer doações;
-- ✅ * Cadastrar receptor da doação;
-- ✅ *  Ver o histórico das doações.
+- ✅ Cadastrar doadores;
+- ✅ Fazer doações;
+- ✅ Cadastrar receptor da doação;
+- ✅ Ver o histórico das doações.
 
 ## 💻 Pré-requisitos
 
@@ -21,4 +21,4 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 
 
-* Embora o projeto esteja funcional, há espaço para melhorias. Este commit é apenas o começo do desenvolvimento do projeto e espero continuar melhorando e adicionando novas funcionalidades no futuro.
+Embora o projeto esteja funcional, há espaço para melhorias. Este commit é apenas o começo do desenvolvimento do projeto e espero continuar melhorando e adicionando novas funcionalidades no futuro.
