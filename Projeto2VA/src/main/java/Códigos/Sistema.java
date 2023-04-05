@@ -74,8 +74,11 @@ public class Sistema {
         for (Doacao doacao : this.doacoes) {
             sb.append("- ").append(doacao.getValor()).append(" de ").append(doacao.getDoador().getNome()).append(" para ").append(doacao.getBeneficiario().getNome()).append("\n");
         }
-        JOptionPane.showMessageDialog(null, sb.toString());
-    }
+        ListaDoacoesFrame listaDoacoesFrame = new ListaDoacoesFrame();
+        listaDoacoesFrame.setTexto(sb.toString());
+        listaDoacoesFrame.setVisible(true);
+}
+
 
     public void listaPessoas() {
         StringBuilder sb = new StringBuilder("Lista de pessoas:\n");

@@ -29,6 +29,6 @@ public class Doador extends Pessoa {
         for (Doacao doacao : this.historico) {
             sb.append("- ").append(doacao.getValor()).append(" para ").append(doacao.getBeneficiario().getNome()).append("\n");
         }
-        JOptionPane.showMessageDialog(null, sb.toString());
+        //JOptionPane.showMessageDialog(null, sb.toString());
     }
 }
