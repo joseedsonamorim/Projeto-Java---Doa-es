@@ -4,6 +4,7 @@
  */
 package Códigos;
 
+import Códigos.negócios.Sistema;
 import javax.swing.JOptionPane;
 
 /**

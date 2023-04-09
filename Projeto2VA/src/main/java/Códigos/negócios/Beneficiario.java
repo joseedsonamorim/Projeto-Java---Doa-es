@@ -1,12 +1,14 @@
-package Códigos;
+package Códigos.negócios;
 
+import Códigos.apresentação.ListagemDeDoacoes;
+import Códigos.apresentação.RecebimentoDeDoacoes;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author joseedson
  */
-public class Beneficiario extends Pessoa {
+public class Beneficiario extends Pessoa implements RecebimentoDeDoacoes, ListagemDeDoacoes {
 
     /*
         A classe Beneficiario representa um beneficiário que recebe doações. 
@@ -20,6 +22,7 @@ public class Beneficiario extends Pessoa {
     }
 
     // Recebe um valor como parâmetro e adiciona esse valor ao totalRecebido do beneficiário.
+    @Override
     public void recebeDoacao(double valor) {
         this.totalRecebido += valor;
     }
