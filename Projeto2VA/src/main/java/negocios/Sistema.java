@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Códigos.negócios;
+package negocios;
 
-import Códigos.dados.Doacao;
-import Códigos.apresentação.ListaDoacoesFrame;
-import Códigos.negócios.Pessoa;
-import Códigos.negócios.Doador;
-import Códigos.negócios.Beneficiario;
+import dados.Doacao;
+import apresentacao.ListaDoacoesFrame;
+import negocios.Pessoa;
+import negocios.Doador;
+import negocios.Beneficiario;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 

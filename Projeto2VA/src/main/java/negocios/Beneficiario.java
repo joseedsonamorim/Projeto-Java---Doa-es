@@ -1,7 +1,7 @@
-package Códigos.negócios;
+package negocios;
 
-import Códigos.apresentação.ListagemDeDoacoes;
-import Códigos.apresentação.RecebimentoDeDoacoes;
+import apresentacao.ListagemDeDoacoes;
+import apresentacao.RecebimentoDeDoacoes;
 import javax.swing.JOptionPane;
 
 /**
