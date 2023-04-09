@@ -5,7 +5,6 @@
 package Códigos;
 
 import java.util.ArrayList;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -13,17 +12,19 @@ import javax.swing.JOptionPane;
  */
 public class Doador extends Pessoa {
 
-    private ArrayList<Doacao> historico;
+    private ArrayList<Doacao> historico; //Armazena o histórico de doações do doador
 
     public Doador(String nome) {
         super(nome);
-        this.historico = new ArrayList<Doacao>();
+        this.historico = new ArrayList<Doacao>();//inicializa o campo "historico" como uma nova lista vazia.
     }
+
 
     public void adicionaDoacao(Doacao doacao) {
         this.historico.add(doacao);
     }
 
+    // Gera uma string com uma lista das doações feitas pelo doador e seus respectivos beneficiários.
     public void listaDoacoes() {
         StringBuilder sb = new StringBuilder("Doações de " + this.getNome() + ":\n");
         for (Doacao doacao : this.historico) {

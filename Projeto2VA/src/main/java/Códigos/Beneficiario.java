@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Códigos;
 
 import javax.swing.JOptionPane;
@@ -13,10 +9,9 @@ import javax.swing.JOptionPane;
 public class Beneficiario extends Pessoa {
 
     /*
-        Comentário.
-        Comentário.
+        A classe Beneficiario representa um beneficiário que recebe doações. 
+        Armazena o total recebido em doações e possui métodos para receber uma doação e listar as doações recebidas.
      */
-    
     private double totalRecebido;
 
     public Beneficiario(String nome) {
@@ -24,10 +19,13 @@ public class Beneficiario extends Pessoa {
         this.totalRecebido = 0;
     }
 
+    // Recebe um valor como parâmetro e adiciona esse valor ao totalRecebido do beneficiário.
     public void recebeDoacao(double valor) {
         this.totalRecebido += valor;
     }
 
+    // Exibe uma mensagem com o nome do beneficiário e o total de doações recebida.
+    @Override
     public void listaDoacoes() {
         JOptionPane.showMessageDialog(null, this.getNome() + " recebeu um total de " + this.totalRecebido + " em doações.");
     }

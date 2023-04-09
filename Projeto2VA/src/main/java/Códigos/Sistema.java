@@ -21,6 +21,7 @@ public class Sistema {
         this.pessoas = new ArrayList<Pessoa>();
     }
 
+    // Método responsável por registrar uma nova doação, verificar a existência de doador ou beneficiário.
     public void registraDoacao() {
         String valorStr = JOptionPane.showInputDialog(null, "Digite o valor da doação:");
         double valor = 0;
@@ -61,6 +62,7 @@ public class Sistema {
             this.pessoas.add(beneficiario);
         }
 
+        // Cria um novo objeto Doacao e adiciona nas listas de doações do doador e do beneficiário, e também na lista de doações geral
         Doacao doacao = new Doacao(valor, doador, beneficiario);
         doador.adicionaDoacao(doacao);
         beneficiario.recebeDoacao(valor);
@@ -69,6 +71,7 @@ public class Sistema {
         JOptionPane.showMessageDialog(null, "Doação registrada com sucesso!");
     }
 
+    // Método responsável por exibir uma lista de todas as doações registradas.
     public void listaDoacoes() {
         StringBuilder sb = new StringBuilder("Lista de doações:\n");
         for (Doacao doacao : this.doacoes) {
@@ -77,9 +80,9 @@ public class Sistema {
         ListaDoacoesFrame listaDoacoesFrame = new ListaDoacoesFrame();
         listaDoacoesFrame.setTexto(sb.toString());
         listaDoacoesFrame.setVisible(true);
-}
+    }
 
-
+    // Método responsável por exibir uma lista de todas as pessoas que doaram.
     public void listaPessoas() {
         StringBuilder sb = new StringBuilder("Lista de pessoas:\n");
         for (Pessoa pessoa : this.pessoas) {
@@ -90,4 +93,3 @@ public class Sistema {
 
     }
 }
-

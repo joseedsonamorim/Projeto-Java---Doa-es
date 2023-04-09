@@ -12,7 +12,10 @@ public class Doacao {
 
     private double valor;
     private Doador doador;
+
+    // Armazena uma referência ao objeto Beneficiario que recebeu a doação.
     private Beneficiario beneficiario;
+
 
     public Doacao(double valor, Doador doador, Beneficiario beneficiario) {
         this.valor = valor;
