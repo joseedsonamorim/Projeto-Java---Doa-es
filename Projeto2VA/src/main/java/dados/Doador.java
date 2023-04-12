@@ -2,11 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package negocios;
+package dados;
 
-import dados.Doacao;
 import apresentacao.ListagemDeDoacoes;
 import java.util.ArrayList;
+import negocios.DoacaoInvalidaException;
+import negocios.Pessoa;
 
 /**
  *
@@ -21,7 +22,10 @@ public class Doador extends Pessoa implements ListagemDeDoacoes {
         this.historico = new ArrayList<Doacao>();//inicializa o campo "historico" como uma nova lista vazia.
     }
 
-    public void adicionaDoacao(Doacao doacao) {
+    public void adicionaDoacao(Doacao doacao) throws DoacaoInvalidaException {
+        if (doacao == null) {
+            throw new DoacaoInvalidaException("Não é possível adicionar uma doação nula.");
+        }
         this.historico.add(doacao);
     }
 

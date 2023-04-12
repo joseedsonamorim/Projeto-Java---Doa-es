@@ -9,5 +9,6 @@ package apresentacao;
  * @author joseedson
  */
 public interface RecebimentoDeDoacoes {
+
     void recebeDoacao(double valor);
 }

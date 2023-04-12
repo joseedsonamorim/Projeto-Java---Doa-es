@@ -9,5 +9,6 @@ package apresentacao;
  * @author joseedson
  */
 public interface ListagemDeDoacoes {
+
     void listaDoacoes();
 }

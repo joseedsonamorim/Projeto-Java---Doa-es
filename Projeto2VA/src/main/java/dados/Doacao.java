@@ -4,7 +4,6 @@
  */
 package dados;
 
-import negocios.Doador;
 import negocios.Beneficiario;
 
 /**
@@ -18,7 +17,6 @@ public class Doacao {
 
     // Armazena uma referência ao objeto Beneficiario que recebeu a doação.
     private Beneficiario beneficiario;
-
 
     public Doacao(double valor, Doador doador, Beneficiario beneficiario) {
         this.valor = valor;

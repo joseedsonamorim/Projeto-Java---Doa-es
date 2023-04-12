@@ -2,15 +2,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package negocios;
+package dados;
 
-import dados.Doacao;
 import apresentacao.ListaDoacoesFrame;
-import negocios.Pessoa;
-import negocios.Doador;
-import negocios.Beneficiario;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import negocios.Beneficiario;
+import negocios.DoacaoInvalidaException;
+import negocios.Pessoa;
 
 /**
  *
@@ -27,7 +26,7 @@ public class Sistema {
     }
 
     // Método responsável por registrar uma nova doação, verificar a existência de doador ou beneficiário.
-    public void registraDoacao() {
+    public void registraDoacao() throws DoacaoInvalidaException {
         String valorStr = JOptionPane.showInputDialog(null, "Digite o valor da doação:");
         double valor = 0;
         try {

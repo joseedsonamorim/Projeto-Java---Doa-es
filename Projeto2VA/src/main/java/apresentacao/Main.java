@@ -4,8 +4,9 @@
  */
 package apresentacao;
 
-import negocios.Sistema;
+import dados.Sistema;
 import javax.swing.JOptionPane;
+import negocios.DoacaoInvalidaException;
 
 /**
  *
@@ -13,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws DoacaoInvalidaException {
         Sistema sistema = new Sistema();
         while (true) {
             int opcao = JOptionPane.showOptionDialog(null, "Escolha uma opção:", "Sistema de Doações", JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, new Object[]{"Registrar doação", "Listar doações", "Listar pessoas", "Sair"}, null);
